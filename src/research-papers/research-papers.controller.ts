@@ -35,6 +35,12 @@ export class ResearchPapersController {
   }
 
   @UseGuards(JwtGuard)
+  @Get('/plot/graph-data')
+  getGraphData(@User() user: UserDto) {
+    return this.researchPapersService.getGraphData(user);
+  }
+
+  @UseGuards(JwtGuard)
   @Get(':id')
   findOne(@Param('id') id: string, @User() user: UserDto) {
     return this.researchPapersService.findOne(id, user);
