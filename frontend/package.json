@@ -1,0 +1,72 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@heroicons/react": "^2.0.18",
+    "@material-tailwind/react": "^2.1.5",
+    "@react-pdf-viewer/core": "^3.x.x",
+    "@react-pdf-viewer/default-layout": "^3.x.x",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "aws-sdk": "^2.1479.0",
+    "axios": "^1.5.1",
+    "cookie": "^0.6.0",
+    "dotenv": "^16.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "pdf-viewer-reactjs": "^2.2.3",
+    "pdfjs-dist": "^3.4.120",
+    "pspdfkit": "^2023.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.3",
+    "react-force-graph-3d": "^1.24.0",
+    "react-graph-vis": "^1.0.7",
+    "react-icons": "^4.12.0",
+    "react-loading": "^2.0.3",
+    "react-loading-icons": "^1.1.0",
+    "react-pdf": "^7.5.1",
+    "react-router-dom": "^6.20.1",
+    "react-scripts": "5.0.1",
+    "react-toggle-dark-mode": "^1.1.1",
+    "reactjs-popup": "^2.0.6",
+    "serve": "^14.2.1",
+    "universal-cookie": "^6.1.1",
+    "web-vitals": "^2.1.4",
+    "worker-loader": "^3.0.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/esm/entry.webpack",
+      "import": "./dist/esm/entry.webpack"
+    }
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
